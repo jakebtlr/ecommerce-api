@@ -22,6 +22,7 @@ export async function findAllProducts() {
   try {
     return await prisma.product.findMany({
       select: { id: true, categoryId: true, name: true, price: true, stock: true },
+      orderBy: { id: 'asc'},
     });
   } catch (err) {
     throw err;

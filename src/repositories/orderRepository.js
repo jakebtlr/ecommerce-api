@@ -69,6 +69,7 @@ export async function updateOrderStatus(id, status) {
 
 export async function deleteOrder(id) {
   try {
+    await prisma.orderItem.deleteMany({ where: { orderId: id } });
     return await prisma.order.delete({
       where: { id },
       select: { id: true, userId: true, status: true, total: true },
