@@ -7,7 +7,7 @@ info:
 servers:
   - url: http://localhost:3000
     description: Local development server
-  - url: https://ecommerce-api-u7bn.onrender.com/api
+  - url: https://ecommerce-api-u7bn.onrender.com
     description: Production server
 
 components:
