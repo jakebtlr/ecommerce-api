@@ -5,7 +5,10 @@ info:
   version: 1.0.0
 
 servers:
-  - url: /api
+  - url: http://localhost:3000
+    description: Local development server
+  - url: https://ecommerce-api-u7bn.onrender.com/api
+    description: Production server
 
 components:
   securitySchemes:
