@@ -70,6 +70,8 @@ npm run dev
 The API will be available at `http://localhost:3000`.
 Swagger UI documentation is available at `http://localhost:3000/api/docs`.
 
+You can also view the Swagger UI documentation through the live API on Render at: https://ecommerce-api-u7bn.onrender.com/api/docs/
+
 ## API Documentation
 
 Full interactive documentation is available via Swagger UI at `/api/docs`. All protected endpoints support JWT authentication via the Authorize button.
@@ -113,5 +115,3 @@ This API is deployed on Render. The `build` script handles migration and seeding
 ```
 prisma generate && prisma migrate deploy && node --env-file=.env prisma/seed.js
 ```
-
-Set `DATABASE_URL` and `JWT_SECRET` as environment variables in your Render service dashboard.
